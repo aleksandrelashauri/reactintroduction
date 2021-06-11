@@ -1,0 +1,28 @@
+.main-container {
+  background-color: darkgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: ridge;
+}
+
+body {
+  display: block;
+  background: #171718;
+}
+
+input {
+  min-width: 100px;
+  border-style: ridge;
+}
+
+button {
+  background-color: green;
+}
+
+ul {
+  list-style-type: none;
+  border-style: ridge;
+}
+
+/*# sourceMappingURL=style.css.map */
