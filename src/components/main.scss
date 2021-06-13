@@ -10,15 +10,14 @@ body {
   background: #171718;
   color: #ddd;
 }
-input {
-  border-style: ridge;
-}
 
 ul {
   list-style-type: none;
   border-style: ridge;
 }
-
+.Todos {
+  border-style: ridge;
+}
 .glow-on-hover {
   width: 50px;
   height: 30px;

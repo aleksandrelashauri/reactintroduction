@@ -1,4 +1,4 @@
-
+import '../../style.css'
 import React, { useState } from 'react'
 import List from './List';
 import TitleInput from './TitleInput';
@@ -17,7 +17,7 @@ const Todos = () => {
  }
     return(
         <div className='todos'>
-            <h2> Todo List</h2>
+            <h2> Check Box </h2>
             <TitleInput onSubmit={addTodo} />
            <List data={data} setData={setData} />
         </div>

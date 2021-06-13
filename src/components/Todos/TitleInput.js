@@ -13,7 +13,7 @@ const TitleInput = ({onSubmit}) =>{
     
     return(
         <form onSubmit={handleSubmit}>
-        <input name='title' placeholder='Enter Title' value={title} onChange={handleChange} />
+        <input name='title' placeholder='Type text' value={title} onChange={handleChange} />
         <button class="glow-on-hover" type='submit'>Add</button>
         </form>   
     );

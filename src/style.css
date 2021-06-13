@@ -12,12 +12,12 @@ body {
   color: #ddd;
 }
 
-input {
+ul {
+  list-style-type: none;
   border-style: ridge;
 }
 
-ul {
-  list-style-type: none;
+.Todos {
   border-style: ridge;
 }
 
