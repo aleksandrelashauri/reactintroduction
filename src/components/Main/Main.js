@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-
+import '../Todos/style.css'
 const api={
     key: 'be20f40819aa6518ef1d8eeffc368109',
     base: 'https://api.openweathermap.org/data/2.5/'
@@ -58,18 +58,30 @@ const search = evt => {
                     
                 </div>
                      <div className="weather-box">
-                     <div className="temp">
-                      {Math.round(weather.main.temp)}C
+                  
+
+                <div className="city-icon1" style={{ 
+                 backgroundImage: `url("http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png")` }}></div>
+                 <div className="temp">
+                      {Math.round(weather.main.temp)}°C
+                </div>
                 </div>
                 <div className="feelslike">
-                     Feels like {Math.round(weather.main.feels_like)}C {weather.weather[0].main },{weather.weather[0].description }
+                     Feels like {Math.round(weather.main.feels_like)}°C {weather.weather[0].main },{weather.weather[0].description }
                 </div>
-                </div>
+               
+                <div className="min-container">
+                    <div className="sub-cont">
                     <div className="wind">{weather.wind.speed}m/s NNW </div>
                     <div className="humidity">Humidity:{weather.main.humidity}% </div>
-                    <div className="dewpoint">Dew pont:{weather.main.temp_min}C </div>
-                    <div className="pressure">{weather.main.pressure}hPa </div>
-                    <div className="visibility">Visibility: {weather.visibility}km </div>
+                    <div className="dewpoint">Dew pont:{weather.main.temp_min}°C </div>
+                     </div>
+                     <div className="sub-cont2">                        
+                      <div className="pressure">{weather.main.pressure}hPa </div>
+                         <div className="visibility">Visibility: {weather.visibility}km </div>
+                    </div>
+                    </div>
+
                     </div>
                         ) : ('')}
       </main>
