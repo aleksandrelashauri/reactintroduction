@@ -1,10 +1,7 @@
-import React from 'react';
-import './Loader.css'
+const Loader = ({isLoading,children}) => {
+    if(isLoading) return (<div className='lds-dual-ring'>Loading</div>)
 
-const Loader = ({isLoading , children}) => {
-    if(isLoading) return (<div className="lds-dual-ring"> </div>)
-    return children
-};
-
+    return children;
+}
 
 export default Loader;
