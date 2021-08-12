@@ -1,0 +1,32 @@
+* {
+  background-color: #f2f3f7;
+  margin: 0%;
+  padding: 0%;
+  .mainDiv {
+    padding: 3rem 14rem;
+    .register {
+        display: flex;
+      color: #409eff;
+      align-items: flex-start;
+    }
+    .button {
+      display: flex;
+      flex-direction: row;
+      padding: 8px 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      color: white;
+      flex-wrap: wrap;
+      width: 15%;
+      margin: 10px 2px;
+      text-align: center;
+      align-items: flex-start;
+    }
+    .registerButton {
+      background-color: #409eff;
+    }
+    .reset {
+      background-color: #409eff;
+    }
+  }
+}
